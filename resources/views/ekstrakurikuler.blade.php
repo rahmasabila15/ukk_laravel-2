@@ -41,108 +41,20 @@
         <div class="col-12">
           <h2 class="text-center">Ekstrakurikuler</h2><br>
           <div class="row">
+            @foreach ($data as $item)
+              {{ $item->nama_eskul }}
+            
             <div class="col-3">
               <div class="card text-center">
                 <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/irma.jpeg" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center">IRMA</h5>
+                  <img width="100%" src="{{ $item->foto }}" alt="" width="100%" height="150">
+                  <h5 class="mt-2 text-center">{{ $item->nama_eskul }}</h5>
                 </div>
               </div>
             </div>
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/paskib.jpeg" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center">PASKIBRA</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/pks.jpeg" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center">PKS</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/pmr.jpeg" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center">PMR</h5>
-                </div>
-              </div>
-            </div>
+
+            @endforeach
           </div>
-        </div>
-       </div>
-          <div class="row">
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/pramuka.jpeg" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center">PRAMUKA</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/volly.jpeg" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center">VOLLY BALL</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/basket.jpeg" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center">BASKET</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/PerisaiDiri.webp" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center">PERISAI DIRI</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row my-5">
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/srl.jpg" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center">SAFETY RIDING</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/tari.jpeg" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center">TARI</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/futsal.jpeg" width="100%" height="150">
-                  <h5 class="mt-2 text-center">FUTSAL</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card text-center">
-                <div class="card-header">
-                  <img width="100%" src="ekstrakurikuler/badminton.jpg" alt="" width="100%" height="150">
-                  <h5 class="mt-2 text-center"> BADMINTON </h5>
-                </div>
-              </div>
-            </div>
           </div>
       <!--TUTUP SECTION EKSTRAKURIKULER-->
       </div>

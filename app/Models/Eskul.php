@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Eskul extends Model
 {
-    protected $fillable = ["foto", "nama_eskul"]
+    protected $fillable = ["foto", "nama_eskul"];
 }
